@@ -16,6 +16,6 @@ if __name__ == "__main__":
     # Поиск винчестеров с стоимостью больше s
     list_of_rezult = [
         weight_of_tuple 
-        for (value_of_tuple, weight_of_tuple)in list_of_turple 
+        for (value_of_tuple, weight_of_tuple) in list_of_turple 
         if value_of_tuple > value]
     print(list_of_rezult)
