@@ -12,5 +12,5 @@ if __name__ == "__main__":
     value = int(input("Введите стоимость "))
 
     # Поиск винчестеров с стоимостью больше s
-    rezult = [i for i in list_of_turple if i[0] > value]
-    print(rezult)
+    list_of_rezult = [i for i in list_of_turple if i[0] > value]
+    print(list_of_rezult)
