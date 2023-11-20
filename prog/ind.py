@@ -4,9 +4,9 @@
 
 if __name__ == "__main__":
     # Колличество винчестеров.
-    count_of_vin = 22
+    COUNT_OF_VIN = 22
     
-    list_of_turple = [tuple(map(int, input("Введите стоимость и вес через пробел: ").split())) for i in range(N)]
+    list_of_turple = [tuple(map(int, input("Введите стоимость и вес через пробел: ").split())) for i in range(COUNT_OF_VIN)]
 
     # Искомая соимость
     value = int(input("Введите стоимость "))
