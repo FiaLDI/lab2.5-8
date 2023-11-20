@@ -12,7 +12,6 @@ if __name__ == "__main__":
     list_of_turple = [tuple(map(int, input("Введите стоимость и вес через пробел: ").split())) \
         for _ in range(COUNT_OF_VIN)]
 
-
     # Поиск винчестеров с стоимостью больше s
     list_of_rezult = [weight_of_tuple for (value_of_tuple, weight_of_tuple)\
          in list_of_turple if value_of_tuple > value]
