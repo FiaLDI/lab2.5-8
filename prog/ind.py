@@ -4,21 +4,13 @@
 
 if __name__ == "__main__":
     # Колличество винчестеров.
-    N = 22
+    count_of_vin = 22
     
-    Arr = []
-    while N > 0:
-        # Ввод стоимости
-        x = int(input("Введите стоимость: "))
-        # Ввод веса
-        y = int(input("Введите вес: "))
-        Arr.append((x,y))
-        N -= 1
+    list_of_turple = [tuple(map(int, input("Введите стоимость и вес через пробел: ").split())) for i in range(N)]
 
     # Искомая соимость
-    s = int(input())
+    value = int(input("Введите стоимость "))
 
     # Поиск винчестеров с стоимостью больше s
-    for item in Arr:
-        if item[0] > s:
-            print(f"Винчестер: ({item[0]},{item[1]}) - {item[1]}")
+    rezult = [i for i in list_of_turple if i[0] > value]
+    print(rezult)
